@@ -19,7 +19,9 @@ class Rope {
       var pointB=this.rope.bodyB.position;
       
       strokeWeight(3);
-      line (pointA.x,pointA.y,pointB.x,pointB.y);
+      var anchorX=pointB.x+this.offsetX;
+      var anchorY=pointB.y+this.offsetY;
+      line (pointA.x,pointA.y,anchorX,anchorY);
       
    }
 
